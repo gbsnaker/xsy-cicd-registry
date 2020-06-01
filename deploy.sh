@@ -1,3 +1,4 @@
+#!/bin/bash 
 cd /home/admin/application
 case $1 in 
 start) 
@@ -14,7 +15,6 @@ break
 *)
   echo "Usage ${0} start or stop"
   ;;
-
-
+esac
 
 
