@@ -1,7 +1,8 @@
 #!/bin/bash 
-cd /home/admin/application
+
 case $1 in 
 start) 
+cd /home/admin/application
 nohup java -jar find-links.jar https://baidu.com & 
 echo $! > pid  
 break
@@ -9,7 +10,7 @@ break
 stop)
 pid=`cat pid`
 kill -9 $pid 
-echo > pid 
+rm -rf /home/admin/application
 break
 ;;
 *)
