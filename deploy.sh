@@ -1,6 +1,3 @@
-pwd
-
-cd docker-java-app
 
 pwd
 ls
